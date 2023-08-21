@@ -1,11 +1,15 @@
-const searchBtn = document.querySelector(".search-btn");
-const cancelBtn = document.querySelector(".cancel-btn");
-const searchBox = document.querySelector(".search-box");
+export function headerFunction() {
 
-searchBtn.onclick = () => {
-    if (searchBox.classList.contains("active")) {
-        searchBox.classList.remove("active")
-    } else {
-        searchBox.classList.add("active");
+    const searchBtn = document.querySelector(".search-btn");
+    const searchBox = document.querySelector(".search-box");
+
+    if (searchBtn !== null) {
+        searchBtn.onclick = () => {
+            if (searchBox.classList.contains("active")) {
+                searchBox.classList.remove("active")
+            } else {
+                searchBox.classList.add("active");
+            }
+        }
     }
 }
