@@ -1,0 +1,118 @@
+.projects {
+    background-color: #DCC1AB;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+    font-style: normal;
+    font-family: Inter, sans-serif;
+}
+
+.grid {
+    background-color: #DCC1AB;
+    position: relative;
+}
+
+.projects-navi {
+    display: flex;
+    flex-direction: column;
+    margin-left: 13.89%;
+    padding-top: 7.5rem;
+    gap: 16px;
+}
+
+.projects-tag {
+    display: block;
+    color: #1B5B31;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 18px;
+    letter-spacing: -0.12px;
+}
+
+.projects-title {
+    display: block;
+    font-family: Montserrat, sans-serif;
+    font-size: 48px;
+    font-weight: 500;
+    line-height: 115%;
+    letter-spacing: -1.44px;
+    margin-bottom: 6rem
+}
+
+.grid:after {
+    content: '';
+    display: block;
+    clear: both;
+}
+
+.grid-sizer,
+.grid-item {
+    width: 30%;
+}
+
+.grid-item {
+    float: left;
+    margin-bottom: 42px;
+}
+
+.grid-item img {
+    display: block;
+    max-width: 100%;
+}
+
+.hidden {
+    display: none;
+}
+
+.expand-button {
+    background: none;
+    color: black;
+    border: 1px solid black;
+    align-items: center;
+    text-align: center;
+    border-radius: 200px;
+    gap: 8px;
+    padding: 12px 22px 14px 22px;
+    position: absolute;
+    z-index: 10;
+    bottom: 5%;
+    left: 50%;
+    transform: translateX(-50%);
+    cursor: pointer;
+}
+
+.collapse-button {
+    background: none;
+    color: black;
+    border: 1px solid black;
+    align-items: center;
+    text-align: center;
+    border-radius: 200px;
+    gap: 8px;
+    padding: 12px 22px 14px 22px;
+    position: absolute;
+    z-index: 10;
+    bottom: 5%;
+    left: 50%;
+    transform: translateX(-50%);
+    cursor: pointer;
+}
+
+.gradient-overlay {
+    position: relative;
+}
+
+.gradient-overlay::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    background: linear-gradient(180deg, rgba(214, 183, 158, 0.00), #DCC1AB);
+    pointer-events: none;
+    z-index: 5;
+}
+
