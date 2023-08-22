@@ -1,5 +1,5 @@
 import {headerFunction} from "./components/header/header.js";
-import {projectFunction} from "/src/components/projects/projects.js";
+import {projectFunction} from "./components/projects/projects.js";
 
 fetch('../src/components/header/header.html')
 .then(res => res.text())
