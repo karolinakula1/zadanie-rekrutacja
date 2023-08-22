@@ -12,6 +12,12 @@ a {
 .grid {
     background-color: #DCC1AB;
     position: relative;
+    max-width: 100%;
+    justify-content: center;
+}
+
+.gutter-sizer {
+    width: 2.99%;
 }
 
 .projects-navi {
@@ -49,7 +55,7 @@ a {
 
 .grid-sizer,
 .grid-item {
-    width: 30%;
+    width: 31.3333%;
 }
 
 .grid-item {

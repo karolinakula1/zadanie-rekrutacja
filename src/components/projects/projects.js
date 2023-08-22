@@ -5,8 +5,8 @@ export function projectFunction() {
     var msnry = new Masonry(grid, {
         itemSelector: '.grid-item',
         columnWidth: '.grid-sizer',
-        gutter: 43,
-        percentPosition: true
+        percentPosition: true,
+        gutter: '.gutter-sizer',
     });
 
     imagesLoaded(grid).on('progress', function () {
@@ -21,17 +21,21 @@ export function projectFunction() {
         hiddenItems.forEach(item => {
             item.classList.remove('hidden');
         });
+        msnry.layout();
         this.style.display = 'none';
-            document.querySelector('.grid').classList.remove('gradient-overlay');
+        document.querySelector('.grid').classList.remove('gradient-overlay');
         collapseButton.style.display = 'block';
     });
+
 
     collapseButton.addEventListener('click', function () {
         const items = document.querySelectorAll('.grid-item:not(.hidden)');
         for(let i = 6; i < items.length; i++) {
             items[i].classList.add('hidden');
         }
+        msnry.layout();
         this.style.display = 'none';
         expandButton.style.display = 'block';
+        document.querySelector('.grid').classList.add('gradient-overlay');
     });
 }
