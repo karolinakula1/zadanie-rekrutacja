@@ -51,3 +51,12 @@ fetch('components/projects/projects.html')
     .catch(err => {
         console.error('Something went wrong during loading file', err)
     })
+
+fetch('components/contact/contact.html')
+    .then(res => res.text())
+    .then(data => {
+        document.querySelector('#my-contact').innerHTML = data;
+    })
+    .catch(err => {
+        console.error('Something went wrong during loading file', err)
+    })
