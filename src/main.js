@@ -17,6 +17,18 @@ fetch('components/sliders/sliders.html')
     .then(res => res.text())
     .then(data => {
         document.querySelector('#my-slider').innerHTML = data;
+
+        const sliderButton2 = document.querySelector('.slider-button-2');
+        sliderButton2.addEventListener('click', function(event) {
+            event.preventDefault();
+            const projectsNavi = document.querySelector('.projects-navi');
+
+            if (projectsNavi) {
+                projectsNavi.scrollIntoView({
+                    behavior: 'smooth'
+                });
+            }
+        });
     })
     .catch(err => {
         console.error('Something went wrong during loading file', err)
@@ -69,3 +81,6 @@ fetch('components/footer/footer.html')
     .catch(err => {
         console.error('Something went wrong during loading file', err)
     })
+
+const sliderButton2 = document.querySelector('.slider-button-2');
+
