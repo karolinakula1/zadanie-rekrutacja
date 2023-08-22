@@ -60,3 +60,12 @@ fetch('components/contact/contact.html')
     .catch(err => {
         console.error('Something went wrong during loading file', err)
     })
+
+fetch('components/footer/footer.html')
+    .then(res => res.text())
+    .then(data => {
+        document.querySelector('#my-footer').innerHTML = data;
+    })
+    .catch(err => {
+        console.error('Something went wrong during loading file', err)
+    })

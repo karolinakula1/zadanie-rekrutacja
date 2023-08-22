@@ -1,0 +1,17 @@
+{
+  "name": "zadanie-rekrutacja",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "bootstrap": "^5.3.1",
+    "lightbox2": "^2.11.4",
+    "masonry-layout": "^4.2.2"
+  }
+}
