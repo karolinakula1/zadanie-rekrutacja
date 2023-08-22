@@ -1,7 +1,7 @@
 import {headerFunction} from "./components/header/header.js";
 import {projectFunction} from "./components/projects/projects.js";
 
-fetch('../src/components/header/header.html')
+fetch('./components/header/header.html')
 .then(res => res.text())
 .then(data => {
     document.querySelector('#header-content').innerHTML = data;
@@ -13,7 +13,7 @@ fetch('../src/components/header/header.html')
 
 headerFunction();
 
-fetch('../src/components/sliders/sliders.html')
+fetch('./components/sliders/sliders.html')
     .then(res => res.text())
     .then(data => {
         document.querySelector('#my-slider').innerHTML = data;
@@ -35,7 +35,7 @@ fetch('../src/components/sliders/sliders.html')
     })
 
 
-fetch('../src/components/offer/offer.html')
+fetch('./components/offer/offer.html')
     .then(res => res.text())
     .then(data => {
         document.querySelector('#my-offer').innerHTML = data;
@@ -45,7 +45,7 @@ fetch('../src/components/offer/offer.html')
     })
 
 
-fetch('../src/components/about/about.html')
+fetch('./components/about/about.html')
     .then(res => res.text())
     .then(data => {
         document.querySelector('#my-about').innerHTML = data;
@@ -54,7 +54,7 @@ fetch('../src/components/about/about.html')
         console.error('Something went wrong during loading file', err)
     })
 
-fetch('../src/components/projects/projects.html')
+fetch('./components/projects/projects.html')
     .then(res => res.text())
     .then(data => {
         document.querySelector('#my-projects').innerHTML = data;
@@ -64,7 +64,7 @@ fetch('../src/components/projects/projects.html')
         console.error('Something went wrong during loading file', err)
     })
 
-fetch('../src/components/contact/contact.html')
+fetch('./components/contact/contact.html')
     .then(res => res.text())
     .then(data => {
         document.querySelector('#my-contact').innerHTML = data;
@@ -73,7 +73,7 @@ fetch('../src/components/contact/contact.html')
         console.error('Something went wrong during loading file', err)
     })
 
-fetch('../src/components/footer/footer.html')
+fetch('./components/footer/footer.html')
     .then(res => res.text())
     .then(data => {
         document.querySelector('#my-footer').innerHTML = data;
